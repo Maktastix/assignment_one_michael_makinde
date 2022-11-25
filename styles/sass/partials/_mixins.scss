@@ -1,0 +1,6 @@
+// Mixins to include
+
+@mixin fontSize($sizeValue, $font-family){
+    font-size: ($sizeValue/20) * 1rem;
+    font-family: $font-family;
+}
