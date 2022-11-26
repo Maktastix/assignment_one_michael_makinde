@@ -1,13 +1,54 @@
 .four_block {
     background-color: $bgc_section_two;
 
-    .first_block {
+    .first_block,
+    .second_block{
         display: flex;
-        width: 100%;
+
+        .text_container{
+            width: 50%;
+            
+            h2{
+                @include font(42, $header_fonts, $heading_color, uppercase);
+
+                span{
+                    display: block;
+                }
+            }
+
+            p{
+                @include font(20, $paragraph_fonts, $text_color, none);
+                line-height: 29px;
+                letter-spacing: 0.2px;
+            }
+
+            button{
+                @include font(20, $header_fonts, $foot_icon_color, uppercase);
+                background-color: $bgc_header;
+                border: none;
+                height: 50px;
+                width: 160px;
+
+                a{
+                    text-decoration: none;
+                    color: $foot_icon_color;
+                }
+            }
+        }
+
+        .img_container{
+            height: 80vh;
+            width: 50%;
+            
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     }
 
-    .second_block {
-        display: flex;
-        width: 50%;
+    .second_block{
+        flex-direction: row-reverse;
     }
 }

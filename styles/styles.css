@@ -267,7 +267,6 @@ html {
 .wrapper {
   width: 70%;
   margin: 0 auto;
-  max-width: 1350px;
 }
 
 ul {
@@ -290,6 +289,7 @@ header nav {
   color: #1F2022;
   text-transform: uppercase;
   padding-top: 20px;
+  line-height: 29px;
 }
 header nav li {
   display: inline-block;
@@ -310,7 +310,7 @@ header h1 {
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 150px;
-  line-height: 0.8;
+  line-height: 87.3px;
 }
 header h1 span {
   display: block;
@@ -320,7 +320,8 @@ header p {
   font-family: "Barlow", sans-serif;
   color: #1F2022;
   text-transform: none;
-  margin-top: 5px;
+  line-height: 37.9px;
+  letter-spacing: 0.3px;
 }
 
 aside {
@@ -412,7 +413,7 @@ aside li i {
   color: #fff;
   text-transform: uppercase;
   background-color: #042259;
-  width: 180px;
+  width: 160px;
   height: 50px;
   border: none;
 }
@@ -424,17 +425,69 @@ aside li i {
 .four_block {
   background-color: #F0F5FF;
 }
-.four_block .first_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
+.four_block .first_block,
 .four_block .second_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.four_block .first_block .text_container,
+.four_block .second_block .text_container {
   width: 50%;
+}
+.four_block .first_block .text_container h2,
+.four_block .second_block .text_container h2 {
+  font-size: 2.1rem;
+  font-family: "Emblema One", cursive;
+  color: #1D81CC;
+  text-transform: uppercase;
+}
+.four_block .first_block .text_container h2 span,
+.four_block .second_block .text_container h2 span {
+  display: block;
+}
+.four_block .first_block .text_container p,
+.four_block .second_block .text_container p {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  color: #1F2022;
+  text-transform: none;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+.four_block .first_block .text_container button,
+.four_block .second_block .text_container button {
+  font-size: 1rem;
+  font-family: "Emblema One", cursive;
+  color: #042259;
+  text-transform: uppercase;
+  background-color: #F5C8CF;
+  border: none;
+  height: 50px;
+  width: 160px;
+}
+.four_block .first_block .text_container button a,
+.four_block .second_block .text_container button a {
+  text-decoration: none;
+  color: #042259;
+}
+.four_block .first_block .img_container,
+.four_block .second_block .img_container {
+  height: 80vh;
+  width: 50%;
+}
+.four_block .first_block .img_container img,
+.four_block .second_block .img_container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.four_block .second_block {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .body_links {

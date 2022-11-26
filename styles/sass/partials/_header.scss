@@ -11,6 +11,7 @@ header {
         text-align: end;
         @include font(18, $nav_fonts, $text_color, uppercase);
         padding-top: 20px;
+        line-height: 29px;
 
         li {
             display: inline-block;
@@ -33,7 +34,7 @@ header {
         @include font(104.6, $header_fonts, $heading_color, uppercase);
         margin-bottom: 0;
         margin-top: 150px;
-        line-height: 0.8;
+        line-height: 87.3px;
 
         span {
             display: block;
@@ -42,7 +43,9 @@ header {
 
     p {
         @include font(37.2, $paragraph_fonts, $text_color, none);
-        margin-top: 5px;
+        // margin-top: 5px;
+        line-height: 37.9px;
+        letter-spacing: 0.3px;
     }
 
 }
