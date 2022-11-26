@@ -1,0 +1,77 @@
+footer {
+    background-color: $bgc_section_two;
+
+    .copyright {
+        @include font(15, $paragraph_fonts, #fff, none);
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        display: block;
+        background-color: $foot_icon_color;
+    }
+
+    h4 {
+        @include font(25, $header_fonts, $heading_color, uppercase);
+        margin: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+
+        p,
+        li {
+            @include font(20, $paragraph_fonts, $text_color, none);
+        }
+
+        .subscribe {
+            width: 60%;
+
+            p {
+                padding: 10px 0;
+            }
+
+            input[type=email] {
+                border: 1px $bgc_header solid;
+                width: 50%;
+                height: 40px;
+                padding-left: 20px;
+            }
+
+            button {
+                @include font(20, $header_fonts, $text_color, uppercase);
+                height: 40px;
+                width: 150px;
+                border: none;
+                border-radius: 0;
+                background-color: $bgc_header;
+            }
+
+        }
+
+        .contact {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+
+            .top {
+                margin-bottom: 10px;
+            }
+
+            .second_nav {
+                text-align: end;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+
+
+    }
+}

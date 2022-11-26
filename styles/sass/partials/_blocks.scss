@@ -1,0 +1,13 @@
+.four_block {
+    background-color: $bgc_section_two;
+
+    .first_block {
+        display: flex;
+        width: 100%;
+    }
+
+    .second_block {
+        display: flex;
+        width: 50%;
+    }
+}

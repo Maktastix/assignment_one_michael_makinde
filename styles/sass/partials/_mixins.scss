@@ -1,7 +1,17 @@
 // Mixins to include
 
-@mixin font($sizeValue, $font-family, $color){
+@mixin font($sizeValue, $font-family, $color, $text-transform){
     font-size: ($sizeValue/20) * 1rem;
     font-family: $font-family;
     color: $color;
+    text-transform: $text-transform;
 }
+
+// Check for solutions
+
+// @mixin gradient($direction, $list) {
+//     background: -webkit-linear-gradient($direction, $list);
+//     background: -moz-linear-gradient($direction, $list);
+//     background: -o-linear-gradient($direction, $list);
+//     background: linear-gradient($direction, $list);
+// }

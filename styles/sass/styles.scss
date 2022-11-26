@@ -2,21 +2,12 @@
 @use 'partials/mixins' as *;
 @use 'partials/setup';
 
-
-html{
-    font-size: 125%;
-}
-
-.wrapper{
-    width: 60%;
-    margin: 0 auto;
-    border: 1px dashed red;
-}
-
-header{
-
-}
-
-h1{
-    @include fontSize(104.6, $header_fonts);
-}
+@import "partials/base";
+@import "partials/header";
+@import "partials/aside";
+@import "partials/gallery";
+// Check .flex_one issues
+@import "partials/blocks";
+// Fix sizing and spacing as well
+@import "partials/links";
+@import "partials/footer";

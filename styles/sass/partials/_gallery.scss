@@ -1,0 +1,72 @@
+.gallery {
+    background-color: $bgc_section_one;
+    padding-bottom: 80px;
+
+    h2 {
+        @include font(42, $header_fonts, $heading_color, uppercase);
+        text-align: center;
+        padding: 60px 0;
+        margin: 0;
+    }
+
+    .photos {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 0 80px 0;
+
+        li {
+            flex-basis: 30%;
+
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    // Issues with image sizing and spacing
+
+    .flex_one {
+        display: flex;
+
+        .kettle {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 30px;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                text-align: start;
+            }
+
+            p {
+                @include font(20, $paragraph_fonts, $text_color, none);
+                line-height: 29px;
+                letter-spacing: 0.2px;
+            }
+
+            button {
+                @include font(20, $header_fonts, #fff, uppercase);
+                background-color: $foot_icon_color;
+                width: 180px;
+                height: 50px;
+                border: none;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.body_links {
+    background-color: $bgc_section_one;
+
+    .icons ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 60px 0;
+
+        li {
+            text-align: center;
+
+            i {
+                font-size: 40px;
+            }
+
+            a {
+                text-decoration: none;
+
+                h3 {
+                    @include font(31.2, $header_fonts, $heading_color, uppercase);
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+}

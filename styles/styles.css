@@ -265,12 +265,285 @@ html {
 }
 
 .wrapper {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
-  border: 1px dashed red;
+  max-width: 1350px;
 }
 
-h1 {
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  background-color: #F5C8CF;
+  height: 800px;
+  background-image: url(../assets/assets/header-group-appliances.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+header nav {
+  text-align: end;
+  font-size: 0.9rem;
+  font-family: "Catamaran", sans-serif;
+  color: #1F2022;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+header nav li {
+  display: inline-block;
+  margin-left: 3%;
+}
+header nav li a {
+  text-decoration: none;
+  color: #1F2022;
+  text-transform: uppercase;
+}
+header nav li a:hover, header nav li a:focus {
+  color: #fff;
+}
+header h1 {
   font-size: 5.23rem;
   font-family: "Emblema One", cursive;
+  color: #1D81CC;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 150px;
+  line-height: 0.8;
+}
+header h1 span {
+  display: block;
+}
+header p {
+  font-size: 1.86rem;
+  font-family: "Barlow", sans-serif;
+  color: #1F2022;
+  text-transform: none;
+  margin-top: 5px;
+}
+
+aside {
+  position: fixed;
+  right: 40px;
+  top: 80px;
+}
+aside li {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+aside li i {
+  font-size: 25px;
+}
+
+.gallery {
+  background-color: #fcdde2;
+  padding-bottom: 80px;
+}
+.gallery h2 {
+  font-size: 2.1rem;
+  font-family: "Emblema One", cursive;
+  color: #1D81CC;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0;
+  margin: 0;
+}
+.gallery .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0 0 80px 0;
+}
+.gallery .photos li {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.gallery .photos li img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.gallery .flex_one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery .flex_one .kettle {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .flex_one div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+}
+.gallery .flex_one div h2 {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+.gallery .flex_one div p {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  color: #1F2022;
+  text-transform: none;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+.gallery .flex_one div button {
+  font-size: 1rem;
+  font-family: "Emblema One", cursive;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #042259;
+  width: 180px;
+  height: 50px;
+  border: none;
+}
+.gallery .flex_one div button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.four_block {
+  background-color: #F0F5FF;
+}
+.four_block .first_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.four_block .second_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.body_links {
+  background-color: #fcdde2;
+}
+.body_links .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 60px 0;
+}
+.body_links .icons ul li {
+  text-align: center;
+}
+.body_links .icons ul li i {
+  font-size: 40px;
+}
+.body_links .icons ul li a {
+  text-decoration: none;
+}
+.body_links .icons ul li a h3 {
+  font-size: 1.56rem;
+  font-family: "Emblema One", cursive;
+  color: #1D81CC;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+}
+
+footer {
+  background-color: #F0F5FF;
+}
+footer .copyright {
+  font-size: 0.75rem;
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  text-transform: none;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  display: block;
+  background-color: #042259;
+}
+footer h4 {
+  font-size: 1.25rem;
+  font-family: "Emblema One", cursive;
+  color: #1D81CC;
+  text-transform: uppercase;
+  margin: 0;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+footer .wrapper p,
+footer .wrapper li {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  color: #1F2022;
+  text-transform: none;
+}
+footer .wrapper .subscribe {
+  width: 60%;
+}
+footer .wrapper .subscribe p {
+  padding: 10px 0;
+}
+footer .wrapper .subscribe input[type=email] {
+  border: 1px #F5C8CF solid;
+  width: 50%;
+  height: 40px;
+  padding-left: 20px;
+}
+footer .wrapper .subscribe button {
+  font-size: 1rem;
+  font-family: "Emblema One", cursive;
+  color: #1F2022;
+  text-transform: uppercase;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 0;
+  background-color: #F5C8CF;
+}
+footer .wrapper .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .wrapper .contact .top {
+  margin-bottom: 10px;
+}
+footer .wrapper .contact .second_nav {
+  text-align: end;
+}
+footer .wrapper .contact .second_nav a {
+  text-decoration: none;
+}
+footer .wrapper p {
+  margin: 0;
 }

@@ -1,0 +1,48 @@
+header {
+    background-color: $bgc_header;
+    height: 800px;
+    background-image: url(#{$asset_path}/header-group-appliances.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    // @include gradient(left, $list1);
+
+    nav {
+        text-align: end;
+        @include font(18, $nav_fonts, $text_color, uppercase);
+        padding-top: 20px;
+
+        li {
+            display: inline-block;
+            margin-left: 3%;
+
+            a {
+                text-decoration: none;
+                color: $text_color;
+                text-transform: uppercase;
+
+                &:hover,
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    h1 {
+        @include font(104.6, $header_fonts, $heading_color, uppercase);
+        margin-bottom: 0;
+        margin-top: 150px;
+        line-height: 0.8;
+
+        span {
+            display: block;
+        }
+    }
+
+    p {
+        @include font(37.2, $paragraph_fonts, $text_color, none);
+        margin-top: 5px;
+    }
+
+}
