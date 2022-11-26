@@ -434,7 +434,7 @@ aside li i {
 .four_block .first_block .text_container,
 .four_block .second_block .text_container {
   width: 30%;
-  margin: 5% 120px;
+  margin: 10% 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
