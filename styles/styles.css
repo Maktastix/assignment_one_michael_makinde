@@ -431,10 +431,11 @@ aside li i {
   display: -ms-flexbox;
   display: flex;
 }
-.four_block .first_block .text_container,
-.four_block .second_block .text_container {
-  width: 30%;
-  margin: 10% 120px;
+.four_block .first_block .text_container_1,
+.four_block .first_block .text_container_2,
+.four_block .second_block .text_container_1,
+.four_block .second_block .text_container_2 {
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,8 +447,10 @@ aside li i {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.four_block .first_block .text_container h2,
-.four_block .second_block .text_container h2 {
+.four_block .first_block .text_container_1 h2,
+.four_block .first_block .text_container_2 h2,
+.four_block .second_block .text_container_1 h2,
+.four_block .second_block .text_container_2 h2 {
   font-size: 2.1rem;
   font-family: "Emblema One", cursive;
   color: #1D81CC;
@@ -455,12 +458,16 @@ aside li i {
   padding: 0;
   margin: 0;
 }
-.four_block .first_block .text_container h2 span,
-.four_block .second_block .text_container h2 span {
+.four_block .first_block .text_container_1 h2 span,
+.four_block .first_block .text_container_2 h2 span,
+.four_block .second_block .text_container_1 h2 span,
+.four_block .second_block .text_container_2 h2 span {
   display: block;
 }
-.four_block .first_block .text_container p,
-.four_block .second_block .text_container p {
+.four_block .first_block .text_container_1 p,
+.four_block .first_block .text_container_2 p,
+.four_block .second_block .text_container_1 p,
+.four_block .second_block .text_container_2 p {
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
   color: #1F2022;
@@ -470,8 +477,10 @@ aside li i {
   padding: 0;
   margin: 0;
 }
-.four_block .first_block .text_container button,
-.four_block .second_block .text_container button {
+.four_block .first_block .text_container_1 button,
+.four_block .first_block .text_container_2 button,
+.four_block .second_block .text_container_1 button,
+.four_block .second_block .text_container_2 button {
   font-size: 1rem;
   font-family: "Emblema One", cursive;
   color: #042259;
@@ -481,14 +490,16 @@ aside li i {
   height: 50px;
   width: 160px;
 }
-.four_block .first_block .text_container button a,
-.four_block .second_block .text_container button a {
+.four_block .first_block .text_container_1 button a,
+.four_block .first_block .text_container_2 button a,
+.four_block .second_block .text_container_1 button a,
+.four_block .second_block .text_container_2 button a {
   text-decoration: none;
   color: #042259;
 }
 .four_block .first_block .img_container,
 .four_block .second_block .img_container {
-  height: 80vh;
+  height: 100%;
   width: 50%;
 }
 .four_block .first_block .img_container img,
@@ -497,6 +508,16 @@ aside li i {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.four_block .first_block .text_container_1,
+.four_block .second_block .text_container_1 {
+  margin: 190px 0 190px 15%;
+  padding-right: 50px;
+}
+.four_block .first_block .text_container_2,
+.four_block .second_block .text_container_2 {
+  margin: 190px 15% 190px 0;
+  padding-left: 50px;
 }
 .four_block .first_block {
   -webkit-box-pack: end;
