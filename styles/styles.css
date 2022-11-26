@@ -433,7 +433,18 @@ aside li i {
 }
 .four_block .first_block .text_container,
 .four_block .second_block .text_container {
-  width: 50%;
+  width: 30%;
+  margin: 5% 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .four_block .first_block .text_container h2,
 .four_block .second_block .text_container h2 {
@@ -441,6 +452,8 @@ aside li i {
   font-family: "Emblema One", cursive;
   color: #1D81CC;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 .four_block .first_block .text_container h2 span,
 .four_block .second_block .text_container h2 span {
@@ -454,6 +467,8 @@ aside li i {
   text-transform: none;
   line-height: 29px;
   letter-spacing: 0.2px;
+  padding: 0;
+  margin: 0;
 }
 .four_block .first_block .text_container button,
 .four_block .second_block .text_container button {
@@ -483,11 +498,19 @@ aside li i {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.four_block .first_block {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .four_block .second_block {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .body_links {
