@@ -30,18 +30,19 @@
                 padding: 10px 0;
             }
 
-            button{
-                @include font(20, $header_fonts, $foot_icon_color, uppercase);
-                background-color: $bgc_header;
-                border: none;
-                height: 50px;
-                width: 160px;
+            a{
+                text-decoration: none;
+                color: $foot_icon_color;
 
-                a{
-                    text-decoration: none;
-                    color: $foot_icon_color;
+                button {
+                    @include font(20, $header_fonts, $foot_icon_color, uppercase);
+                    background-color: $bgc_header;
+                    border: none;
+                    height: 50px;
+                    width: 160px;
                 }
             }
+            
         }
 
         .text_container_1{
