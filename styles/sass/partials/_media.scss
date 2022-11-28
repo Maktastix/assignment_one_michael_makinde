@@ -1,0 +1,125 @@
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    header{
+        height: 600px;
+        background-image: url(#{$asset_path}/header-group-appliances.png/);
+        background-size: 500px 500px;
+    }
+
+    aside{
+        right: 20px;
+    }
+
+    .four_block{
+
+        .first_block,
+        .second_block{
+            height: 500px;
+
+            .text_container_1,
+            .text_container_2 {
+                width: 45%;
+            }
+
+            .img_container{
+            height: 500px;
+            }
+        }
+    }
+
+    .body_links{
+        
+        .icons ul{
+            padding-left: 4%;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .wrapper{
+        width: 95%;
+    }
+
+    aside{
+        right: 0px;
+    }
+
+    .gallery{
+
+        .flex_one{
+
+            .img_container{
+                width: 40%;
+            }
+
+            .text_container{
+                width: 60%;
+
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .four_block{
+
+        .first_block,
+        .second_block{
+            height: 400px;
+
+            .text_container_1,
+            .text_container_2 {
+                width: calc((100% - 5%) / 2);
+
+                p{
+                    margin: 0;
+                }
+            }
+
+            .text_container_1{
+                padding-right: 20px;
+            }
+
+            .text_container_2{
+                padding-left: 20px;
+            }
+
+            .img_container{
+            height: 400px;
+            }
+        }
+    }
+
+    .body_links{
+        
+        .icons ul{
+            padding-left: 4%;
+        }
+    }
+}
+
+@media (max-width: 940px){
+    .wrapper{
+        width: 95%;
+    }
+
+    header{
+        height: 100vh;
+        background-image: url(#{$asset_path}/header-alt-mobile.png);
+        background-size: 80vh;
+        background-color: $bgc_section_one
+    }
+
+    aside{
+        display: none;
+    }
+
+    .gallery{
+
+        
+    }
+}

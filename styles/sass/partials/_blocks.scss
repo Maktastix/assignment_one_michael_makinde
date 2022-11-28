@@ -27,8 +27,7 @@
                 @include font(20, $paragraph_fonts, $text_color, none);
                 line-height: 29px;
                 letter-spacing: 0.2px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding: 10px 0;
             }
 
             button{

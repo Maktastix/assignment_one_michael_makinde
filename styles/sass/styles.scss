@@ -1,13 +1,11 @@
 @use 'partials/variables' as *;
 @use 'partials/mixins' as *;
 @use 'partials/setup';
-
 @import "partials/base";
 @import "partials/header";
 @import "partials/aside";
 @import "partials/gallery";
-// Check .flex_one issues
 @import "partials/blocks";
-// Fix sizing and spacing as well
 @import "partials/links";
 @import "partials/footer";
+@import "partials/media";
