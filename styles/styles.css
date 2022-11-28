@@ -267,6 +267,7 @@ html {
 .wrapper {
   width: 70%;
   margin: 0 auto;
+  max-width: 1350px;
 }
 
 ul {
@@ -297,7 +298,7 @@ header nav li {
 }
 header nav li a {
   text-decoration: none;
-  color: #1F2022;
+  color: #042259;
   text-transform: uppercase;
 }
 header nav li a:hover, header nav li a:focus {
@@ -336,6 +337,7 @@ aside li {
 }
 aside li i {
   font-size: 25px;
+  color: #1D81CC;
 }
 
 .gallery {
@@ -362,12 +364,10 @@ aside li i {
   margin: 0 0 80px 0;
 }
 .gallery .photos li {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  width: 32%;
 }
 .gallery .photos li img {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .gallery .flex_one {
@@ -375,13 +375,17 @@ aside li i {
   display: -ms-flexbox;
   display: flex;
 }
-.gallery .flex_one .kettle {
+.gallery .flex_one .img_container {
+  width: 30%;
+}
+.gallery .flex_one .img_container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .flex_one div {
+.gallery .flex_one .text_container {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,12 +398,12 @@ aside li i {
           justify-content: space-between;
   margin-left: 30px;
 }
-.gallery .flex_one div h2 {
+.gallery .flex_one .text_container h2 {
   margin: 0;
   padding: 0;
   text-align: start;
 }
-.gallery .flex_one div p {
+.gallery .flex_one .text_container p {
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
   color: #1F2022;
@@ -407,7 +411,7 @@ aside li i {
   line-height: 29px;
   letter-spacing: 0.2px;
 }
-.gallery .flex_one div button {
+.gallery .flex_one .text_container button {
   font-size: 1rem;
   font-family: "Emblema One", cursive;
   color: #fff;
@@ -417,7 +421,7 @@ aside li i {
   height: 50px;
   border: none;
 }
-.gallery .flex_one div button a {
+.gallery .flex_one .text_container button a {
   text-decoration: none;
   color: #fff;
 }
@@ -431,10 +435,11 @@ aside li i {
   display: -ms-flexbox;
   display: flex;
 }
-.four_block .first_block .text_container,
-.four_block .second_block .text_container {
-  width: 30%;
-  margin: 10% 120px;
+.four_block .first_block .text_container_1,
+.four_block .first_block .text_container_2,
+.four_block .second_block .text_container_1,
+.four_block .second_block .text_container_2 {
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,12 +447,14 @@ aside li i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.four_block .first_block .text_container h2,
-.four_block .second_block .text_container h2 {
+.four_block .first_block .text_container_1 h2,
+.four_block .first_block .text_container_2 h2,
+.four_block .second_block .text_container_1 h2,
+.four_block .second_block .text_container_2 h2 {
   font-size: 2.1rem;
   font-family: "Emblema One", cursive;
   color: #1D81CC;
@@ -455,23 +462,29 @@ aside li i {
   padding: 0;
   margin: 0;
 }
-.four_block .first_block .text_container h2 span,
-.four_block .second_block .text_container h2 span {
+.four_block .first_block .text_container_1 h2 span,
+.four_block .first_block .text_container_2 h2 span,
+.four_block .second_block .text_container_1 h2 span,
+.four_block .second_block .text_container_2 h2 span {
   display: block;
 }
-.four_block .first_block .text_container p,
-.four_block .second_block .text_container p {
+.four_block .first_block .text_container_1 p,
+.four_block .first_block .text_container_2 p,
+.four_block .second_block .text_container_1 p,
+.four_block .second_block .text_container_2 p {
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
   color: #1F2022;
   text-transform: none;
   line-height: 29px;
   letter-spacing: 0.2px;
-  padding: 0;
-  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.four_block .first_block .text_container button,
-.four_block .second_block .text_container button {
+.four_block .first_block .text_container_1 button,
+.four_block .first_block .text_container_2 button,
+.four_block .second_block .text_container_1 button,
+.four_block .second_block .text_container_2 button {
   font-size: 1rem;
   font-family: "Emblema One", cursive;
   color: #042259;
@@ -481,10 +494,20 @@ aside li i {
   height: 50px;
   width: 160px;
 }
-.four_block .first_block .text_container button a,
-.four_block .second_block .text_container button a {
+.four_block .first_block .text_container_1 button a,
+.four_block .first_block .text_container_2 button a,
+.four_block .second_block .text_container_1 button a,
+.four_block .second_block .text_container_2 button a {
   text-decoration: none;
   color: #042259;
+}
+.four_block .first_block .text_container_1,
+.four_block .second_block .text_container_1 {
+  padding-right: 70px;
+}
+.four_block .first_block .text_container_2,
+.four_block .second_block .text_container_2 {
+  padding-left: 70px;
 }
 .four_block .first_block .img_container,
 .four_block .second_block .img_container {
