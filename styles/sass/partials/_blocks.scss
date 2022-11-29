@@ -1,3 +1,5 @@
+// Four block section
+
 .four_block {
     background-color: $bgc_section_two;
 
@@ -11,7 +13,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
             
             h2{
                 @include font(42, $header_fonts, $heading_color, uppercase);

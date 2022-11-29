@@ -289,19 +289,21 @@ header nav {
   font-family: "Catamaran", sans-serif;
   color: #1F2022;
   text-transform: uppercase;
-  padding-top: 20px;
   line-height: 29px;
 }
-header nav li {
+header nav i {
+  opacity: 0;
+}
+header nav ul li {
   display: inline-block;
   margin-left: 30px;
 }
-header nav li a {
+header nav ul li a {
   text-decoration: none;
   color: #042259;
   text-transform: uppercase;
 }
-header nav li a:hover, header nav li a:focus {
+header nav ul li a:hover, header nav ul li a:focus {
   color: #fff;
 }
 header h1 {
@@ -552,6 +554,7 @@ aside li i {
 }
 .body_links .icons ul li i {
   font-size: 40px;
+  color: #042259;
 }
 .body_links .icons ul li a {
   text-decoration: none;
@@ -577,6 +580,13 @@ footer .copyright {
   margin: 0;
   display: block;
   background-color: #042259;
+}
+footer .copyright a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .copyright a:hover, footer .copyright a:focus {
+  text-decoration: underline;
 }
 footer h4 {
   font-size: 1.25rem;
@@ -727,6 +737,15 @@ footer .wrapper p {
 @media (max-width: 940px) {
   .wrapper {
     width: 95%;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav i {
+    opacity: 1;
+    padding-top: 20px;
+    font-size: 50px;
+    color: #042259;
   }
   header {
     height: 100vh;
@@ -900,6 +919,7 @@ footer .wrapper p {
   header h1 {
     font-size: 50px;
     line-height: 55px;
+    margin-top: 70px;
   }
   header p {
     margin-top: 5px;
@@ -911,6 +931,9 @@ footer .wrapper p {
   }
   footer .wrapper .contact {
     width: 95%;
+  }
+  footer .wrapper .contact span {
+    display: block;
   }
   footer .wrapper .subscribe input[type=email] {
     width: 95%;
